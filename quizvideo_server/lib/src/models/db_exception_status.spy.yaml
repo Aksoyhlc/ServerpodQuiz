@@ -1,0 +1,7 @@
+enum: ExType
+serialized: byName
+values:
+  - Error
+  - Warning
+  - Info
+  - Success

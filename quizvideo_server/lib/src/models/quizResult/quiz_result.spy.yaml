@@ -1,0 +1,14 @@
+class: QuizResult
+table: quiz_result
+fields:
+  typeId: int
+  userId: int?
+  type: QuizResultType
+  correctCount: int
+  wrongCount: int
+  passedCount: int
+  point: int
+  createdAt: DateTime?
+  startedAt: DateTime?
+  endAt: DateTime?
+  typeText: String?, !persist

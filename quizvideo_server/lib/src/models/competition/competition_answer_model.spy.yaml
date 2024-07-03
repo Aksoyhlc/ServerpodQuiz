@@ -1,0 +1,9 @@
+class: CompetitionAnswer
+fields:
+  competition: Competition
+  question: Question
+  answer: String
+  user1Answer: String?
+  user2Answer: String?
+  user1IsCorrect: bool?
+  user2IsCorrect: bool?

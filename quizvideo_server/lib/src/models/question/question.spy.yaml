@@ -1,0 +1,15 @@
+class: Question
+table: question
+fields:
+  content: String
+  a: String
+  b: String
+  c: String
+  d: String
+  answer: String
+  point: int
+  createdAt: DateTime?
+  updatedAt: DateTime?
+  categoryIds: List<String>?, !persist
+  categories: List<CategoryQuestion>?, relation(name=question_questions)
+  quizs: List<QuizQuestion>?, relation(name=question_questions_x)

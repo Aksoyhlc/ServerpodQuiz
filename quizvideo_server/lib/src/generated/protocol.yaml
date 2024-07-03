@@ -1,0 +1,41 @@
+category:
+  - getAll:
+  - getById:
+  - add:
+  - update:
+  - delete:
+  - getQuestions:
+  - getUploadDescription:
+  - verifyUpload:
+competition:
+  - otherAnswerCheck:
+example:
+  - hello:
+online:
+  - competition:
+  - addUser:
+question:
+  - getAll:
+  - add:
+  - update:
+  - delete:
+  - getById:
+quiz:
+  - add:
+  - delete:
+  - getAll:
+  - getById:
+  - update:
+quizResult:
+  - add:
+  - getAll:
+  - leaderBoard:
+  - adminResult:
+user:
+  - userInfoUpdate:
+  - add:
+  - delete:
+  - getAll:
+  - getById:
+  - getByUserInfoId:
+  - update:

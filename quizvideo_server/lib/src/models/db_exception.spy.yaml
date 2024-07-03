@@ -1,0 +1,5 @@
+exception: DbException
+fields:
+  message: String
+  stackTrace: String?
+  type: ExType?

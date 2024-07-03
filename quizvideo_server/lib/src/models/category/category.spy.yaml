@@ -1,0 +1,7 @@
+class: Category
+table: category
+fields:
+  name: String
+  image: String?
+  questionIds: List<int?>?, !persist
+  questions: List<CategoryQuestion>?, relation(name=category_questions)

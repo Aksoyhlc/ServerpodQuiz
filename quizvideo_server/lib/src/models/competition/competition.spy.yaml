@@ -1,0 +1,14 @@
+class: Competition
+table: competition
+fields:
+  identifier: UuidValue
+  user1: module:auth:UserInfo?, relation
+  user2: module:auth:UserInfo?, relation
+  type: QuizResultType
+  typeId: int
+  createdAt: DateTime?
+  questions: List<Question>?, !persist
+
+indexes:
+  competition_identifier_idx:
+    fields: identifier

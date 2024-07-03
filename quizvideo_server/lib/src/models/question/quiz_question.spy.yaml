@@ -1,0 +1,6 @@
+class: QuizQuestion
+table: quiz_question
+fields:
+  quiz: Quiz?, relation(name=quiz_questions, onDelete=CASCADE, onUpdate=CASCADE)
+  question: Question?, relation(name=question_questions_x, onDelete=CASCADE, onUpdate=CASCADE)
+  createdAt: DateTime

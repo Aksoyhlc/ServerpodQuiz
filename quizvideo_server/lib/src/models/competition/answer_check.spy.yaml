@@ -1,0 +1,5 @@
+class: AnswerCheck
+fields:
+  competitionAnswer: CompetitionAnswer
+  thisUser: int
+  otherAnswer: String?

@@ -1,0 +1,92 @@
+{
+  "actions": [
+    {
+      "type": "deleteTable",
+      "deleteTable": "online_user"
+    },
+    {
+      "type": "createTable",
+      "createTable": {
+        "name": "online_user",
+        "dartName": "OnlineUser",
+        "module": "quizvideo",
+        "schema": "public",
+        "columns": [
+          {
+            "name": "id",
+            "columnType": 6,
+            "isNullable": false,
+            "columnDefault": "nextval('online_user_id_seq'::regclass)",
+            "dartType": "int?"
+          },
+          {
+            "name": "userId",
+            "columnType": 6,
+            "isNullable": false,
+            "dartType": "int"
+          },
+          {
+            "name": "type",
+            "columnType": 0,
+            "isNullable": false,
+            "dartType": "protocol:QuizResultType"
+          },
+          {
+            "name": "typeId",
+            "columnType": 6,
+            "isNullable": false,
+            "dartType": "int"
+          },
+          {
+            "name": "createdAt",
+            "columnType": 4,
+            "isNullable": true,
+            "dartType": "DateTime?"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "constraintName": "online_user_fk_0",
+            "columns": [
+              "userId"
+            ],
+            "referenceTable": "serverpod_user_info",
+            "referenceTableSchema": "public",
+            "referenceColumns": [
+              "id"
+            ],
+            "onUpdate": 4,
+            "onDelete": 4
+          }
+        ],
+        "indexes": [
+          {
+            "indexName": "online_user_pkey",
+            "elements": [
+              {
+                "type": 0,
+                "definition": "id"
+              }
+            ],
+            "type": "btree",
+            "isUnique": true,
+            "isPrimary": true
+          }
+        ],
+        "managed": true
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "type": "tableDropped",
+      "message": "One or more columns are added to table \"online_user\" which cannot be added in a table migration. The complete table will be deleted and recreated.",
+      "table": "online_user",
+      "columns": [
+        "type"
+      ],
+      "destrucive": true
+    }
+  ],
+  "migrationApiVersion": 1
+}

@@ -1,0 +1,19 @@
+class: Quiz
+table: quiz
+fields:
+  title: String?
+  description: String?
+  #questions: List<QuizQuestion>?, relation(optional)
+  questions: List<QuizQuestion>?, relation(name=quiz_questions)
+  questionsIds: List<String>?, !persist
+  time: int?
+  createdAt: DateTime?
+  updatedAt: DateTime?
+  status: QuizStatus?
+  type: QuizType?
+  user: User?
+
+
+indexes:
+  quiz_status_idx:
+    fields: status

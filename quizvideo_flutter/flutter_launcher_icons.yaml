@@ -1,0 +1,12 @@
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/images/serverpod.png"
+  ios: true
+  remove_alpha_ios: true
+  windows:
+    generate: true
+    image_path: "assets/images/serverpod.png"
+    icon_size: 256
+  linux: true
+
+

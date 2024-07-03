@@ -1,0 +1,4 @@
+class: StreamAction
+fields:
+  action: String
+  data: String

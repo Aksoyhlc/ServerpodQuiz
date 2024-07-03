@@ -1,0 +1,6 @@
+enum: QuizStatus
+serialized: byName
+values:
+  - active
+  - inactive
+  - deleted

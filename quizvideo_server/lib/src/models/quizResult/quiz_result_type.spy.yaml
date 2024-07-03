@@ -1,0 +1,5 @@
+enum: QuizResultType
+serialized: byName
+values:
+    - category
+    - quiz

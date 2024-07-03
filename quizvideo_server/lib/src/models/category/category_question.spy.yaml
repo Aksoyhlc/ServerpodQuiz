@@ -1,0 +1,13 @@
+class: CategoryQuestion
+table: category_question
+fields:
+    category: Category? , relation(name=category_questions, onUpdate=Cascade, onDelete=Cascade)
+    question: Question? , relation(name=question_questions, onUpdate=Cascade, onDelete=Cascade)
+    #categoryId: int, relation(parent=category, onUpdate=Cascade, onDelete=Cascade)
+    #questionId: int, relation(parent=question, onUpdate=Cascade, onDelete=Cascade)
+    createdAt: DateTime
+
+indexes:
+    category_questions_index_idx:
+        fields: categoryId, questionId
+        unique: true

@@ -1,0 +1,7 @@
+class: OnlineUser
+table: online_user
+fields:
+  user: module:auth:UserInfo?, relation(onDelete=Cascade, onUpdate=Cascade)
+  type: QuizResultType
+  typeId: int
+  createdAt: DateTime?

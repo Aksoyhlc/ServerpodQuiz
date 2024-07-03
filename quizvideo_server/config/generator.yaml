@@ -1,0 +1,8 @@
+type: server
+
+client_package_path: ../quizvideo_client
+
+
+modules:
+  serverpod_auth:
+    nickname: auth

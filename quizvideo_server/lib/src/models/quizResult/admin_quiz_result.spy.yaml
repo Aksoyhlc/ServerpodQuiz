@@ -1,0 +1,6 @@
+class: AdminQuizResult
+fields:
+  userCount: Map<int, int>
+  resultCount: Map<int, int>
+  correctCount: Map<int, int>
+  wrongCount: Map<int, int>

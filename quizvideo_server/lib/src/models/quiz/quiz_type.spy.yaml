@@ -1,0 +1,5 @@
+enum: QuizType
+serialized: byName
+values:
+    - user
+    - global
